@@ -12,6 +12,7 @@ export default new Vuex.Store({
         editData: []
     },
     mutations: {
+        // 用户登陆获取user
         'LOGIN_USER'(state, action) {
             state.user = action
         },
@@ -24,6 +25,7 @@ export default new Vuex.Store({
         }
     },
     actions: {
+        // 用户登陆获取数据
         'FETCH_LOGIN'({ commit }, action) {
             axios.post('http://api.baxiaobu.com/index.php/home/v1/login', qs.stringify(action))
                 .then(res => {
@@ -36,6 +38,7 @@ export default new Vuex.Store({
                     }
                 })
         },
+        // 获取表格数据
         'FETACH_TABLE_DATA'({ commit }) {
             axios.get('http://api.baxiaobu.com/index.php/home/v5/findUser')
                 .then(res => {

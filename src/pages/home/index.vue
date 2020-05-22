@@ -48,7 +48,6 @@ export default {
 
     handleOK(value) {
       if (value.status) {
-        // openDialog;
         this.$store.dispatch("FETACH_TABLE_EDIT", value);
       } else {
         this.$store.dispatch("FETACH_TABLE_ADD", value);

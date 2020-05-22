@@ -1,32 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style lass='less'>
+    body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,td,form,input,select,textarea,span,img,a,em,strong,*{ margin:0; padding:0;}
+    body{ font-family:"����"; font-size:12px; color:#000000;}
+    ul,ol,li{ list-style:none;}
+    .qcys{-webkit-appearance:none}
+    h1,h2,h3,h4,h5,h6{ font-size:14px;}
+    input,select,textarea{ vertical-align:middle;}
+    img{ border:none; vertical-align:middle;}
+    a{ text-decoration:none; color:#333333;}
+    a:hover{ color:#009999;}
+    .clear{ clear:both; height:0px; width:0px; overflow:hidden;}
+    #app{
+        width: 100%;
+        height: 100%;
+    }
 </style>
